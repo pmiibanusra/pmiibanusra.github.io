@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PMII BALI NUSRA</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="notification-area"></div>
+
+    <div class="gif-color-overlay"></div>
+
+    <header id="pageHeader" class="fixed top-0 left-0 w-full z-30">
+        <div class="container mx-auto flex justify-between items-center px-4 h-16 sm:h-20 md:h-[5.5rem]">
+            <div id="topLeftLogo" class="logo-container w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Logo_PMII.png/250px-Logo_PMII.png" alt="Logo PMII">
+            </div>
+            <div> 
+                <button id="hamburgerButton" class="text-white focus:outline-none p-2 rounded-md hover:bg-white/10 active:bg-white/20 transition-colors">
+                    <svg class="w-7 h-7 sm:w-8 sm:h-8 md:w-9 md:h-9" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div id="sideMenu"> 
+        <div class="flex justify-end mb-4"> 
+            <button id="closeSideMenuButton" class="focus:outline-none p-2 rounded-md hover:bg-black/10 active:bg-black/20 transition-colors">
+                <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            </button>
+        </div>
+        <nav> 
+            <a href="#home" class="menu-link">HOME</a>
+            <a href="#about" class="menu-link">ABOUT</a>
+            <a href="#team" class="menu-link">TEAM</a>
+            <a href="#release" class="menu-link">RELEASE</a>
+            <a href="#database" class="menu-link">DATABASE</a>
+        </nav>
+    </div>
+
+    <main id="pageContainer">
+        <div id="page-home" class="page-content-wrapper">
+            <div id="home-hero" class="full-screen-container text-white"> 
+                <div class="max-w-3xl mx-auto px-4">
+                    <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold mb-6 leading-tight hero-animate-title" style="text-shadow: 2px 2px 6px rgba(0,0,0,0.6); color: #FFCB05;">
+                        PMII BALI NUSRA
+                    </h1>
+                    <div class="text-lg sm:text-xl md:text-2xl lg:text-3xl mb-10 font-medium hero-animate-subtitle" style="text-shadow: 1px 1px 4px rgba(0,0,0,0.5);">
+                        <p>PERGERAKAN MAHASISWA ISLAM INDONESIA</p>
+                        <p>REGION BALI DAN NUSA TENGGARA</p>
+                    </div>
+                    <a href="#pelajari-lebih-lanjut-content" id="selengkapnyaButton"
+                       class="font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 ease-in-out transform hover:scale-105 active:scale-95
+                             text-base sm:text-lg md:text-xl 
+                             py-3 px-6 sm:py-3.5 sm:px-8 md:py-4 md:px-10 hero-animate-button"
+                       style="background-color: #FFCB05; color: #1f2937;">
+                        Selengkapnya
+                    </a>
+                </div>
+            </div>
+            <section id="pelajari-lebih-lanjut-content" class="page-content-section">
+                <div class="container mx-auto px-4">
+                    <div class="counter-card-container mb-16 sm:mb-20 pt-8 sm:pt-12">
+                        <div class="counter-card card flex flex-col items-center justify-center text-center reveal-on-scroll">
+                            <div id="counter1" class="counter-number">0</div>
+                            <h3 class="counter-label font-semibold">CABANG</h3>
+                            <p class="counter-label text-xs">KABUPATEN/KOTA</p>
+                        </div>
+                        <div class="counter-card card flex flex-col items-center justify-center text-center reveal-on-scroll" style="transition-delay: 0.1s;">
+                            <div id="counter2" class="counter-number">0</div>
+                            <h3 class="counter-label font-semibold">KOMISARIAT</h3>
+                            <p class="counter-label text-xs">UNIVERSITAS/LAINNYA</p>
+                        </div>
+                        <div class="counter-card card flex flex-col items-center justify-center text-center reveal-on-scroll" style="transition-delay: 0.2s;">
+                             <div id="counter3" class="counter-number">0</div>
+                            <h3 class="counter-label font-semibold">RAYON</h3>
+                            <p class="counter-label text-xs">FAKULTAS/LAINNYA</p>
+                        </div>
+                    </div>
+                    <div class="max-w-4xl mx-auto mb-16 sm:mb-20 pt-8 sm:pt-0 reveal-on-scroll">
+                        <p class="text-base sm:text-lg text-gray-700 text-justify leading-relaxed sm:leading-loose">
+                            PMII adalah organisasi mahasiswa Islam yang didirikan pada 17 April 1960 di Surabaya, Jawa Timur, oleh 13 mahasiswa dan pemuda Nahdlatul Ulama (NU) dengan restu KH Idham Chalid. Berlandaskan Islam Ahlussunnah Wal Jamaah, PMII bertujuan membentuk pribadi muslim Indonesia yang bertakwa, berilmu, berbudi luhur, dan bertanggung jawab. Organisasi ini aktif dalam kegiatan sosial, pendidikan, dan politik, serta fokus mengembangkan kepemimpinan mahasiswa. PMII tersebar di berbagai daerah, termasuk Bali dan Nusa Tenggara, dikoordinasikan oleh PKC PMII Bali Nusa Tenggara. PMII terus berkontribusi dalam memperjuangkan cita-cita kemerdekaan Indonesia.
+                        </p>
+                    </div>
+                    <div id="homeNewsGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-6 mb-16 sm:mb-20 pt-8 sm:pt-12">
+                        </div>
+                     <div id="homeTestimonialGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 md:gap-6 pt-8 sm:pt-12">
+                        </div>
+                </div>
+            </section>
+        </div>
+
+        <div id="page-about" class="page-content-wrapper">
+            <section class="page-content-section">
+                <div class="container mx-auto px-4">
+                    <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExZzU4ZWY5ejhjaDM3M3VkYzJodXp3ODhvMHFob3g5bDQ3dnhmaXYxcSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/fHSxiRjom2A9dYZ7hq/giphy.gif" alt="Kegiatan PMII Bali Nusra" class="about-page-image reveal-on-scroll" onerror="this.onerror=null;this.src='https://placehold.co/700x400/E2E8F0/4A5568?text=Gambar+Tidak+Tersedia';">
+                    <div class="max-w-4xl mx-auto my-10 reveal-on-scroll">
+                        <p class="text-gray-700 leading-relaxed text-justify text-base sm:text-lg">
+                            Pergerakan Mahasiswa Islam Indonesia (PMII) merupakan organisasi kemahasiswaan yang berlandaskan nilai-nilai Islam Ahlussunnah wal Jama’ah dan berorientasi pada perjuangan intelektual, sosial, dan kebangsaan. Berdiri sejak 1960, PMII hadir sebagai wadah pengkaderan mahasiswa Muslim Indonesia untuk membentuk pribadi yang beriman, bertakwa, kritis, progresif, serta mampu menjawab tantangan zaman. PMII memposisikan diri sebagai mitra strategis dalam pembangunan bangsa, dengan mengedepankan prinsip independensi, transformasi sosial, dan gerakan keilmuan. Melalui berbagai forum, pelatihan, serta advokasi, PMII berperan aktif dalam penguatan demokrasi, hak asasi manusia, dan keadilan sosial.
+                        </p>
+                    </div>
+                    <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExcjJldGM3bjg3dDh5aHE5MjN4OHI1MXRydW56OGcxYjA1MGhsYTRwayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/UFdFuhMrBljJSBHb4K/giphy.gif" alt="Aktivitas PMII" class="about-page-gif reveal-on-scroll" onerror="this.onerror=null;this.src='https://placehold.co/700x400/E2E8F0/4A5568?text=GIF+Tidak+Tersedia';">
+                    <div class="max-w-4xl mx-auto my-10 reveal-on-scroll">
+                        <p class="text-gray-700 leading-relaxed text-justify text-base sm:text-lg">
+                            PMII Bali Nusra (Bali, Nusa Tenggara Barat, dan Nusa Tenggara Timur) merupakan representasi regional dari PMII yang aktif mendorong penguatan kapasitas kader di kawasan Indonesia Timur. Wilayah ini menjadi ruang strategis bagi PMII dalam mengembangkan nilai-nilai keislaman dan keindonesiaan berbasis multikulturalisme dan toleransi. PMII Bali Nusra hadir sebagai pelopor gerakan intelektual mahasiswa yang konsisten menyuarakan keadilan sosial, pemberdayaan masyarakat adat, serta pelestarian nilai-nilai lokal. Melalui kaderisasi berjenjang dan kolaborasi antar cabang, PMII Bali Nusra terus membangun jaringan intelektual dan aktivis yang berdaya saing di tingkat regional dan nasional.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div id="page-team" class="page-content-wrapper">
+            <section class="page-content-section">
+                <div class="container mx-auto px-4">
+                    <div id="teamGrid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 pt-8">
+                        </div>
+                </div>
+            </section>
+        </div>
+
+        <div id="page-release" class="page-content-wrapper">
+            <section class="page-content-section">
+                <div class="container mx-auto px-4">
+                    <div id="release-list-view">
+                        <div id="releaseGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 sm:gap-3 md:gap-4 pt-8">
+                            </div>
+                        <div class="text-center mt-8">
+                            <button id="loadMoreReleasesButton" class="bg-yellow-500 hover:bg-yellow-600 text-gray-800 font-semibold py-2 px-6 rounded-lg transition-colors duration-200 transform hover:scale-105 active:scale-95">
+                                Baca Lainnya
+                            </button>
+                        </div>
+                    </div>
+                    <div id="release-detail-view" class="hidden max-w-4xl mx-auto"> 
+                        <button id="back-to-release-list" class="mb-8 bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded-lg transition-all duration-200 inline-flex items-center transform hover:scale-105 active:scale-95">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd" /></svg>
+                            Kembali
+                        </button>
+                        <img id="detail-release-image" src="" alt="Gambar Detail Informasi" class="release-detail-image" onerror="this.onerror=null;this.src='https://placehold.co/768x432/E2E8F0/4A5568?text=Gambar+Detail+Tidak+Tersedia';">
+                        <h2 id="detail-release-title" class="text-3xl sm:text-4xl font-bold mt-6 mb-3 text-gray-800"></h2>
+                        <p id="detail-release-date" class="text-base text-gray-500 mb-6"></p>
+                        <div id="detail-release-content" class="text-gray-700 leading-relaxed text-justify text-base sm:text-lg"></div>
+                        <hr class="my-10 border-gray-300">
+                        <h3 class="text-2xl sm:text-3xl font-semibold mb-6 text-gray-800">Informasi Lainnya:</h3>
+                        <ul id="latest-releases-list" class="list-none space-y-3"></ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div id="page-database" class="page-content-wrapper">
+            <section class="page-content-section">
+                <div class="container mx-auto px-4 max-w-2xl"> 
+                    <form id="formKartuAnggota" action="#" method="POST" class="space-y-6 bg-white p-6 sm:p-8 rounded-xl shadow-xl border border-gray-200 reveal-on-scroll mt-8">
+                        <div>
+                            <label for="nama_lengkap" class="form-label">NAMA LENGKAP</label>
+                            <input type="text" name="nama_lengkap" id="nama_lengkap" class="form-input form-input-uppercase" required>
+                        </div>
+                        <div>
+                            <label for="asal_rayon" class="form-label">RAYON ATAU FAKULTAS</label>
+                            <select name="asal_rayon" id="asal_rayon" class="form-select" required>
+                                <option value="">Pilih Fakultas/Rayon...</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="asal_komisariat" class="form-label">KOMISARIAT ATAU UNIVERSITAS</label>
+                            <select name="asal_komisariat" id="asal_komisariat" class="form-select" required>
+                                <option value="">Pilih Universitas/Komisariat...</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="asal_cabang" class="form-label">CABANG (KAB ATAU KOTA)</label>
+                            <select name="asal_cabang" id="asal_cabang" class="form-select" required>
+                                <option value="">Pilih Cabang (Kab/Kota)...</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="sertifikat_mapaba" class="form-label">SERTIFIKAT MAPABA (JPG, PNG, PDF, DOC)</label>
+                            <input type="file" name="sertifikat_mapaba" id="sertifikat_mapaba" class="form-file-input" accept=".jpg, .jpeg, .png, .svg, .doc, .docx, .pdf" required>
+                        </div>
+                        <div class="pt-3"> 
+                            <button type="submit" id="submitKtaButton" class="form-button submit-button-card flex items-center justify-center">
+                                <span class="button-text">BUAT KTA PMII</span>
+                                <span class="button-spinner"></span>
+                            </button>
+                            <button type="button" id="unduhProdukHukumButton" class="form-button download-button-card">
+                                PRODUK HUKUM PMII
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <div class="app-promo-footer-section">
+        <div class="container mx-auto px-4">
+            <div class="app-promo-footer-container">
+                <div class="app-footer-content-wrapper w-full">
+                    <div class="app-promo-text-content">
+                        <h2 class="app-promo-headline">
+                            Download Aplikasi <span style="color: #FFCB05;">PERMAISINDO</span>
+                        </h2>
+                        <h3 class="app-promo-subheadline">
+                            Platform Aktivis Pergerakan, Sekarang!
+                        </h3>
+                        <div class="app-promo-buttons">
+                            <a href="#" class="app-store-badge">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Download_on_the_App_Store_Badge.svg/2560px-Download_on_the_App_Store_Badge.svg.png" alt="Download di App Store" onerror="this.onerror=null;this.src='https://placehold.co/160x48/000000/FFFFFF?text=App+Store';">
+                            </a>
+                            <a href="#" class="app-store-badge">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/800px-Google_Play_Store_badge_EN.svg.png" alt="Dapatkan di Google Play" onerror="this.onerror=null;this.src='https://placehold.co/160x48/000000/FFFFFF?text=Google+Play';">
+                            </a>
+                        </div>
+                    </div>
+                    <footer class="main-footer-text-container mt-8"> 
+                        <p class="mb-2 text-sm">&copy;2025 PMII Bali dan Nusa Tenggara.<br class="sm:hidden"> Hak Cipta Dilindungi Undang-Undang.</p>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts.js" defer></script>
+</body>
+</html>
